@@ -1,5 +1,6 @@
-#¿Cómo accederías al valor asociado con la clave 'Calculo' en el
-#diccionario anidado para 'Baltasar'?
+#Escribe un bucle `for` en Python para iterar a través de todos los nombres en el diccionario e
+#imprimir solo aquellos que tienen una clave 'Programación' en su diccionario anidado.
+
 
 diccionario = {
     "Alondra": {"Regresion": 3.4, "InteligenciaArtificial": 2.8},
@@ -10,4 +11,8 @@ diccionario = {
     "Fabiola": {"Multivariante": 3.2, "Probabilidad": 4.1, "HistoriaEst": 2.9}
 }
 
-print("La nota de calculo de Baltasar es:", diccionario["Baltasar"]["Calculo"])
+for nombre in diccionario:
+    if 'Programacion' in diccionario[nombre]:
+        print(nombre)
+    
+    

@@ -1,5 +1,5 @@
-#¿Cómo accederías al valor asociado con la clave 'Calculo' en el
-#diccionario anidado para 'Baltasar'?
+#Escribe un código que liste todos los estudiantes que tienen una
+#nota en 'Probabilidad' mayor a 3.0.
 
 diccionario = {
     "Alondra": {"Regresion": 3.4, "InteligenciaArtificial": 2.8},
@@ -10,4 +10,6 @@ diccionario = {
     "Fabiola": {"Multivariante": 3.2, "Probabilidad": 4.1, "HistoriaEst": 2.9}
 }
 
-print("La nota de calculo de Baltasar es:", diccionario["Baltasar"]["Calculo"])
+for nombre, asignaturas in diccionario.items():
+    if 'Probabilidad' in asignaturas and asignaturas['Probabilidad'] > 3.0:
+        print(nombre)

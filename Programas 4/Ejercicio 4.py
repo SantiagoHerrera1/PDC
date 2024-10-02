@@ -1,5 +1,5 @@
-#¿Cómo accederías al valor asociado con la clave 'Calculo' en el
-#diccionario anidado para 'Baltasar'?
+#Si intentas acceder a una clave que no existe en el diccionario, como
+#`diccionario['Alondra']['Estadística']`, ¿Qué ocurre y cómo puedes manejarlo?
 
 diccionario = {
     "Alondra": {"Regresion": 3.4, "InteligenciaArtificial": 2.8},
@@ -10,4 +10,15 @@ diccionario = {
     "Fabiola": {"Multivariante": 3.2, "Probabilidad": 4.1, "HistoriaEst": 2.9}
 }
 
-print("La nota de calculo de Baltasar es:", diccionario["Baltasar"]["Calculo"])
+for nombre in diccionario:
+    if "Estadistica" in diccionario["Alondra"]:
+        print(nombre)
+    else:
+        print("El dato no existe en este diccionario")
+        break
+    
+
+
+
+
+

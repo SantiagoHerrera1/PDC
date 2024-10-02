@@ -1,5 +1,4 @@
-#¿Cómo accederías al valor asociado con la clave 'Calculo' en el
-#diccionario anidado para 'Baltasar'?
+#¿Qué comando usarías para eliminar la materia 'HistoriaEst' del diccionario de 'Fabiola'?
 
 diccionario = {
     "Alondra": {"Regresion": 3.4, "InteligenciaArtificial": 2.8},
@@ -10,4 +9,5 @@ diccionario = {
     "Fabiola": {"Multivariante": 3.2, "Probabilidad": 4.1, "HistoriaEst": 2.9}
 }
 
-print("La nota de calculo de Baltasar es:", diccionario["Baltasar"]["Calculo"])
+diccionario['Fabiola'].pop('HistoriaEst')
+print(diccionario ["Fabiola"])

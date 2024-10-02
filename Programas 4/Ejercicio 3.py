@@ -1,5 +1,6 @@
-#¿Cómo accederías al valor asociado con la clave 'Calculo' en el
-#diccionario anidado para 'Baltasar'?
+#¿Qué línea de código usarías para añadir un nuevo par clave-valor `'MineríaDatos': 3.5`
+#al diccionario anidado de 'Alondra'?
+
 
 diccionario = {
     "Alondra": {"Regresion": 3.4, "InteligenciaArtificial": 2.8},
@@ -10,4 +11,8 @@ diccionario = {
     "Fabiola": {"Multivariante": 3.2, "Probabilidad": 4.1, "HistoriaEst": 2.9}
 }
 
-print("La nota de calculo de Baltasar es:", diccionario["Baltasar"]["Calculo"])
+diccionario['Alondra']['MineríaDatos'] = 3.5
+print(diccionario)
+
+
+
